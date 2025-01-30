@@ -58,25 +58,38 @@
             <Card
                 publisher="Cosmonaut Mag"
                 title="The Machiavellian State, Fascism, and the Tribune of the Proletariat"
-                href="example.com"
+                link="example.com"
                 date="April 29, 2022"
                 text="How Machiavelli can help us understand the bourgeois nature of fascism, and how anti-fascism must empower the proletariat"
+                audio=true
             />
             <Card
                 publisher="CTWG"
                 title="On the Falsity of Prevailing Ideas: The Concept of Ideology in Early Critical Theory"
-                href="https://ctwgwebsite.github.io/projects/1_project/"
+                link="https://ctwgwebsite.github.io/projects/1_project/"
                 date="Fall 2024"
                 text="Writers have spilled rivers of ink over the term “ideology.” This steady flow has become a deluge of mediocre tomes from uninquisitive minds..."
+                pdf="https://ctwgwebsite.github.io/assets/pdf/journal/Margin_notes_1_final_full.pdf"
+                creativecommons="fa-creative-commons-by"
             />
         </div>
 
-        <div id="section1" class="mb-8">
+        <!-- COURSES -->
+        <div id="courses" class="section">
+            <h2> Courses </h2>
+            <Card
+                title="Weirdo Triumvirate: Nietzsche, Freud, Marx"
+                link="example.com"
+                date="Fall 2022"
+                text="Didn't these nerds all live in Austria at the same time? No I feel like Nietzsche was dead before Freud was old enough. I'm not going to look it up.
+                They discussed a parable of a traveler who was choking on his father's penis and had no choice but to bite it off. A spectre is fucking Europe."
+            />
+        </div>
 
-            <h2 class="text-4xl font-bold mb-4"> About </h2>
-
-            <p class="text-xl text-gray-700">
-            </p>
+        <!-- LINKS -->
+        <div id="links" class="section">
+            <h2> Links </h2>
+            <p> Soundcloud link, or montage of those albums you listen to on Fridays. Maybe embed a youtube video of playing Darude - Sandstorm on the guitar </p>
         </div>
     </div>
 
