@@ -6,10 +6,10 @@
 <Navbar />
 
 
-<div class="container mx-auto flex ">
+<div class="container mx-auto flex flex-col lg:flex-row">
 
     <!-- Table of Contents -->
-    <div class="p-6 bg-white border rounded-xl border-gray-200 fixed h-screen overflow-y-auto">
+    <div class="w-full lg:w-1/6 p-6 bg-white border rounded-xl border-gray-200 lg:fixed lg:h-screen lg:overflow-y-auto ">
       <h2 class="text-xl font-bold mb-4">Table of Contents</h2>
       <ul class="space-y-2">
         <li><a href="#section1" class="text-blue-500 hover:underline">About</a></li>
@@ -20,7 +20,7 @@
     </div>
 
     <!-- Content -->
-    <div class="w-3/4 ml-[20%] p-6 bg-gray-100">
+    <div class="w-full lg:w-3/4 lg:ml-[20%] p-6 bg-gray-100">
       <div id="section1" class="mb-8">
         <h2 class="text-2xl font-bold mb-4">Section 1</h2>
         <p class="text-gray-700">
