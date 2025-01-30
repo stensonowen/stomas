@@ -2,5 +2,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-h1 { outline: 1px solid red; }
-p { color: green; } 
