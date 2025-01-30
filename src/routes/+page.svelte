@@ -1,8 +1,6 @@
 <script lang="ts">
     import logo from '../assets/sam1_.png'
-    import bluesky from '../assets/Bluesky_Logo.svg'
-    import logowebp from '../assets/sam1.webp'
-    import email from '../assets/envelope-solid.svg'
+    import '@fortawesome/fontawesome-free/css/all.min.css'
 </script>
 
 <div class="flex flex-col items-center justify-center mt-32" >
@@ -46,16 +44,19 @@
 
                 <!-- Icon Menu Section -->
                 <div class="flex items-center space-x-5">
-                    <a class="flex text-gray-300 hover:text-blue-500 cursor-pointer transition-colors duration-300">
-                        <img class="h-4 w-4 mr-2 mt-0.5" src={bluesky}>
+                    <a class="flex text-gray-300 hover:text-blue-500 cursor-pointer transition-colors duration-200"
+                        href="bluesky.app" >
+                        <i class="fa-brands fa-bluesky"></i>
                     </a>
 
-                    <a class="flex text-gray-300 cursor-pointer transition-colors duration-300 font-semibold text-blue-600">
-                        𝕏
+                    <a class="flex text-gray-300 hover:text-blue-500 cursor-pointer transition-colors duration-200"
+                        href="x.com/xkcd" >
+                        <i class="fa-brands fa-x-twitter"></i>
                     </a>
 
-                    <a class="flex text-white-300 hover:text-blue-500 cursor-pointer transition-colors duration-300">
-                        <img class="h-4 w-4 mr-2 mt-0.5" src={email}>
+                    <a class="flex text-gray-300 hover:text-blue-500 cursor-pointer transition-colors duration-200"
+                        href="mailto@todo" >
+                        <i class="fa-regular fa-envelope"></i>
                     </a>
                 </div>
             </nav>
