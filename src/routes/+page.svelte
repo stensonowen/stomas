@@ -1,7 +1,7 @@
 <script lang="ts">
     import Navbar from '$lib/navbar.svelte'
+    import Card from '$lib/card.svelte'
     import bent from '../assets/bent2.png'
-    import Card from '../card.svelte'
 </script>
 
 <style>
@@ -17,6 +17,7 @@
     .section h2 {
         font-size: 2.25rem;
         font-weight: bold;
+        margin-bottom: 1rem;
     }
 </style>
 
@@ -54,52 +55,30 @@
         <!-- PUBLICATIONS -->
         <div id="publications" class="section">
             <h2> Publications </h2>
-            <p class="text-xl text-gray-700">
-                helo
-            </p>
+            <Card
+                publisher="Cosmonaut Mag"
+                title="The Machiavellian State, Fascism, and the Tribune of the Proletariat"
+                href="example.com"
+                date="April 29, 2022"
+                text="How Machiavelli can help us understand the bourgeois nature of fascism, and how anti-fascism must empower the proletariat"
+            />
+            <Card
+                publisher="CTWG"
+                title="On the Falsity of Prevailing Ideas: The Concept of Ideology in Early Critical Theory"
+                href="https://ctwgwebsite.github.io/projects/1_project/"
+                date="Fall 2024"
+                text="Writers have spilled rivers of ink over the term “ideology.” This steady flow has become a deluge of mediocre tomes from uninquisitive minds..."
+            />
         </div>
 
         <div id="section1" class="mb-8">
-
-            <img class="w-1/3 float-left mr-4 mb-4 rounded-lg" src={bent} />
 
             <h2 class="text-4xl font-bold mb-4"> About </h2>
 
             <p class="text-xl text-gray-700">
             </p>
         </div>
-        <div id="section2" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Publications</h2>
-            <p class="text-gray-700">
-                <Card name="foo" />
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-        <div id="section3" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Section 3</h2>
-            <p class="text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-        </div>
-        <div id="section4" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Section 4</h2>
-            <p class="text-gray-700">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
     </div>
 
 </div>
 
-<div class="container mx-auto px-20">
-
-    <div class="rounded-xl bg-gray-300">
-        <h1 class="text-3xl p-8 "
-        >About </h1>
-        <img class="h-80" src={bent} />
-    </div>
-
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-</div>
