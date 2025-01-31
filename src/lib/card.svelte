@@ -20,7 +20,7 @@
             <i class="fa-solid fa-volume-low"></i>
         {/if}
         {#if pr.pdf}
-            <a href={pr.pdf}><i class="fa-solid fa-file-pdf"></i></a>
+            <a href={pr.pdf} aria-label="pdf"><i class="fa-solid fa-file-pdf"></i></a>
         {/if}
         {#if pr.creativecommons}
             <i class="fa-brands fa-creative-commons"></i>

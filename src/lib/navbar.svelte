@@ -73,28 +73,28 @@
             <!-- Right -->
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex cursor-pointer hover:text-blue-500 transition-colors duration-200"
-                    href="https://bsky.app/profile/wokesteppenomad.bsky.social" >
+                    href="https://bsky.app/profile/wokesteppenomad.bsky.social" aria-label="bluesky">
                     <i class="fa-brands fa-bluesky"></i>
                 </a>
 
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://x.com/wokesteppenomad/" >
+                    href="https://x.com/wokesteppenomad/" aria-label="twitter">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
 
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="mailto:samthomas@arizona.edu" >
+                    href="mailto:samthomas@arizona.edu" aria-label="email link">
                     <i class="fa-regular fa-envelope"></i>
                 </a>
 
                 <!-- Light/Dark -->
                 <span class="pl-5">
-                    <button onclick={lighten} id="lighten"
+                    <button onclick={lighten} id="lighten" aria-label="light mode"
                         class="hover:text-blue-500 cursor-pointer transition-colors duration-200 " >
                         <i class="fa-solid fa-sun"></i>
                     </button>
                     /
-                    <button onclick={darken} id="darken"
+                    <button onclick={darken} id="darken" aria-label="dark mode"
                         class="hover:text-blue-500 cursor-pointer transition-colors duration-200" >
                         <i class="fa-solid fa-moon"></i>
                     </button>
