@@ -10,7 +10,7 @@
         {#if pr.publisher}
             <span class="text-gray-700 italic pr-2"> {pr.publisher}: </span>
         {/if}
-        <span class="text-gray-300"> {pr.title} </span>
+        <span class="text-gray-400"> {pr.title} </span>
     </a>
     <p class="pt-1 text-gray-400">
         {#if pr.date}
