@@ -24,7 +24,7 @@
     :global(body.dark) #darken  { color: lightgray; }
 </style>
 
-<div class="mt-14 lg:mt-24">
+<div class="mt-20 lg:mt-24">
 
     <!-- Navbar -->
     <nav use:onLoad={onLoad} class="flex justify-around py-4 bg-gray-700/80 dark:bg-gray-900/80 py-2 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10">
