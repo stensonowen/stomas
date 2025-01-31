@@ -22,11 +22,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set BASE_PATH dynamically
+        id: set_base_path
+        run: |
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "BASE_PATH=/preview-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+          else
+            echo "BASE_PATH=/${{ github.event.repository.name }}" >> $GITHUB_ENV
+          fi
+
       - name: build
-        env:
-          # BASE_PATH: "/stomas"
-          BASE_PATH: |
-            ${{ github.event_name == 'pull_request' && '/preview-${{ github.event.pull_request.number }}' || '/${{ github.event.repository.name }}' }}
         run: |
           env
           npm run build
