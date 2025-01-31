@@ -26,8 +26,9 @@ jobs:
         env:
           # BASE_PATH: "/stomas"
           BASE_PATH: |
-            ${{ github.event_name == 'pull_request' && '/preview-${ github.event.pull_request.number }' || '/${ github.event.repository.name }' }}
+            ${{ github.event_name == 'pull_request' && '/preview-${{ github.event.pull_request.number }}' || '/${{ github.event.repository.name }}' }}
         run: |
+          env
           npm run build
 
       - name: Upload Artifacts
