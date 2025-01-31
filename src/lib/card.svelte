@@ -8,13 +8,13 @@
     ">
     <a class="text-3xl p-1" href={pr.link}>
         {#if pr.publisher}
-            <span class="text-gray-700 italic pr-2"> {pr.publisher}: </span>
+            <span class="text-gray-400 italic pr-2"> {pr.publisher}: </span>
         {/if}
-        <span class="text-gray-400"> {pr.title} </span>
+        <span class="text-gray-600"> {pr.title} </span>
     </a>
-    <p class="pt-1 text-gray-400">
+    <p class="pt-1 text-gray-500">
         {#if pr.date}
-            <span class="text-gray-500 pr-2"> {pr.date} </span>
+            <span class="text-gray-400 pr-2"> {pr.date} </span>
         {/if}
         {#if pr.audio}
             <i class="fa-solid fa-volume-low"></i>
