@@ -3,12 +3,17 @@
     import '@fortawesome/fontawesome-free/css/all.min.css'
 
     function darken() {
-        console.log('darken');
         window.document.body.classList.add('dark');
     }
     function lighten() {
-        console.log('lighten');
         window.document.body.classList.remove('dark');
+    }
+
+    function onLoad() {
+        if (window.matchMedia('(prefers-color-scheme: dark)')) {
+            console.log('browser requests dark mode');
+            darken();
+        }
     }
 </script>
 
@@ -22,7 +27,7 @@
 <div class="mt-14 lg:mt-24">
 
     <!-- Navbar -->
-    <nav class="flex justify-around py-4 bg-gray-700/80 dark:bg-gray-900/80 py-2 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10">
+    <nav use:onLoad={onLoad} class="flex justify-around py-4 bg-gray-700/80 dark:bg-gray-900/80 py-2 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10">
 
         <div class="flex items-center">
             <!-- Left -->
