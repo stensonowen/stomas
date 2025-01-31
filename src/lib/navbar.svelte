@@ -39,7 +39,7 @@
 
             <!-- Middle -->
             <div class="items-center p-2">
-                <a class="text-gray-200 cursor-pointer text-2xl" href={`$base}/`}>
+                <a class="text-gray-200 cursor-pointer text-2xl" href={`${base}/`}>
                     Sam Thomas
                 </a>
             </div>
