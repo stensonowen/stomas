@@ -23,6 +23,32 @@
     #darken  { color: gray; }
     :global(body.dark) #lighten { color: gray; }
     :global(body.dark) #darken  { color: lightgray; }
+
+    #darken, #lighten {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    #lighten::after { right: 0; }
+    #darken::after  { left: 0; }
+
+    #lighten::after,
+    #darken::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      width: 0%;
+      height: 2px;
+      background-color: lightgray;
+      transition: width 0.2s ease;
+    }
+
+    #lighten::after { width: 100%; }
+    #darken::after { width: 0%; }
+    :global(body.dark) #lighten::after { width: 0%; }
+    :global(body.dark) #darken::after { width: 100%; }
+
 </style>
 
 <div class="mt-20 lg:mt-24">
