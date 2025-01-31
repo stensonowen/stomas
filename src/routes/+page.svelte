@@ -41,13 +41,15 @@
 
 <style>
     .section {
-        color: black;
         border-radius: 15px;
         overflow-y: hidden;
         background-color: lightgray;
         padding: 1rem 2rem;
         margin-bottom: 2rem;
         scroll-margin-top: 5rem;
+    }
+    :global(body.dark) .section {
+        background-color: #0e1724;
     }
     .section h2 {
         font-size: 2.25rem;
@@ -71,37 +73,36 @@
 </style>
 
 
-<!--
-1. light/dark mode button
-X. scroll progress table of contents
-3. fix links
-?. github ci
--->
-
 <Navbar />
 
 <div class="container mx-auto flex flex-col lg:flex-row">
 
 
     <!-- Table of Contents -->
-    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 bg-white dark:bg-gray-400 border rounded-xl border-gray-200 lg:fixed ">
-        <h2 class="text-xl text-gray-700 font-bold mb-4">Contents</h2>
+    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 border rounded-xl border-gray-600 lg:fixed
+        bg-white dark:bg-gray-800
+        text-gray-500 dark:text-gray-300
+        ">
+        <h2 class="text-xl font-bold mb-4
+            text-gray-700 dark:text-gray-400"
+        >Contents</h2>
         <ul class="space-y-2 px-5">
-            <li><a href="#about"        class="text-gray-500 hover:font-bold selected">About</a></li>
-            <li><a href="#publications" class="text-gray-500 hover:font-bold">Publications</a></li>
-            <li><a href="#courses"      class="text-gray-500 hover:font-bold">Courses</a></li>
-            <li><a href="#links"        class="text-gray-500 hover:font-bold">Links</a></li>
+            <li><a href="#about"        class="hover:font-bold selected">About</a></li>
+            <li><a href="#publications" class="hover:font-bold">Publications</a></li>
+            <li><a href="#courses"      class="hover:font-bold">Courses</a></li>
+            <li><a href="#links"        class="hover:font-bold">Links</a></li>
         </ul>
     </div>
 
     <!-- Content -->
-    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[15%] ">
+    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[15%]
+        text-gray-600 dark:text-gray-300">
 
         <!-- ABOUT -->
         <div id="about" class="section">
             <img class="w-1/5 float-left mr-4 mb-4 rounded-lg" src={bent} alt="a man crouches" />
             <h2> About Sam </h2>
-            <p class="text-xl pb-1">
+            <p class="text-xl pb-1 dark:text-gray-200">
                 PhD student and Graduate TA at the
                 <a class="text-blue-700 hover:underline" href="https://philosophy.arizona.edu/person/samuel-thomas"
                 >University of Arizona</a>. 

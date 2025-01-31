@@ -18,10 +18,10 @@
 </script>
 
 <style>
-    #lighten { color: gray; }
+    #lighten { color: lightgray; }
     #darken  { color: gray; }
     :global(body.dark) #lighten { color: gray; }
-    :global(body.dark) #darken  { color: gray; }
+    :global(body.dark) #darken  { color: lightgray; }
 </style>
 
 <div class="mt-14 lg:mt-24">

@@ -3,7 +3,9 @@
     let pr = $props();
 </script>
 
-<div class="container bg-gray-100 text-xl p-2 rounded-r-xl mb-5">
+<div class="container text-xl p-2 rounded-r-xl mb-5
+    bg-gray-100 dark:bg-black
+    ">
     <a class="text-3xl p-1" href={pr.link}>
         {#if pr.publisher}
             <span class="text-gray-600 italic pr-2"> {pr.publisher}: </span>
