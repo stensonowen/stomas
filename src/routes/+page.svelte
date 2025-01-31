@@ -2,6 +2,39 @@
     import Navbar from '$lib/navbar.svelte'
     import Card from '$lib/card.svelte'
     import bent from '../assets/bent2.png'
+
+    let contentsElems = {};
+
+    function initializeScrollObserver() {
+        document.querySelectorAll('#table-of-contentsElems a').forEach(elem => {
+            contentsElems[elem.hash] = elem;
+        });
+
+        const options = {
+            threshold: [0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1],
+        };
+        let scrollObserver = new IntersectionObserver(onIntersection, options);
+        document.querySelectorAll('.section').forEach(e => scrollObserver.observe(e));
+    }
+    function onLoad() {
+        initializeScrollObserver();
+    }
+    function onIntersection(entries, observer) {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                let link = contentsElems['#' + e.target.id];
+                if (! link) {
+                    console.warn(`label not found ${e.target.id}`);
+                    return
+                }
+                if (e.intersectionRatio > 0.4) {
+                    link.classList.add('selected');
+                } else {
+                    link.classList.remove('selected');
+                }
+            }
+        });
+    }
 </script>
 
 
@@ -20,6 +53,9 @@
         font-weight: bold;
         margin-bottom: 1rem;
     }
+    .selected {
+        font-weight: bold;
+    }
 </style>
 
 
@@ -34,11 +70,12 @@
 
 <div class="container mx-auto flex flex-col lg:flex-row">
 
+
     <!-- Table of Contents -->
-    <div class="w-full lg:w-auto p-5 bg-white border rounded-xl border-gray-200 lg:fixed ">
+    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 bg-white border rounded-xl border-gray-200 lg:fixed ">
         <h2 class="text-xl text-gray-700 font-bold mb-4">Contents</h2>
         <ul class="space-y-2 px-5">
-            <li><a href="#about"        class="text-gray-500 hover:font-bold">About</a></li>
+            <li><a href="#about"        class="text-gray-500 hover:font-bold selected">About</a></li>
             <li><a href="#publications" class="text-gray-500 hover:font-bold">Publications</a></li>
             <li><a href="#courses"      class="text-gray-500 hover:font-bold">Courses</a></li>
             <li><a href="#links"        class="text-gray-500 hover:font-bold">Links</a></li>
@@ -46,7 +83,7 @@
     </div>
 
     <!-- Content -->
-    <div class="w-full lg:w-auto lg:ml-[15%] ">
+    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[15%] ">
 
         <!-- ABOUT -->
         <div id="about" class="section">
@@ -89,7 +126,7 @@
                 link="example.com"
                 date="Fall 2022"
                 text="Didn't these nerds all live in Austria at the same time? No I feel like Nietzsche was dead before Freud was old enough. I'm not going to look it up.
-                They discussed a parable of a traveler who was choking on his father's penis and had no choice but to bite it off. A spectre is fucking Europe."
+                They discussed a parable of a traveler who was choking on his father's penis and had no choice but to bite it off. A spectre is blowing Europe's back out."
             />
         </div>
 
