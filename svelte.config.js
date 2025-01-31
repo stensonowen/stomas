@@ -20,7 +20,7 @@ const config = {
             strict: true
         }),
         paths: {
-            base: process.argv.includes('dev') ? '' : 'stomas'
+            base: process.argv.includes('dev') ? '' : '/stomas'
         }
     }
 };
