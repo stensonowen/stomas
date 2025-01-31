@@ -24,15 +24,18 @@
 
             <!-- Right -->
             <div class="flex items-center space-x-5 text-gray-300 ">
-                <a class="flex cursor-pointer hover:text-blue-500 transition-colors duration-200" href="bluesky.app" >
+                <a class="flex cursor-pointer hover:text-blue-500 transition-colors duration-200"
+                    href="https://bsky.app/profile/wokesteppenomad.bsky.social" >
                     <i class="fa-brands fa-bluesky"></i>
                 </a>
 
-                <a class="flex hover:text-blue-500 transition-colors duration-200" href="x.com/xkcd" >
+                <a class="flex hover:text-blue-500 transition-colors duration-200"
+                    href="https://x.com/wokesteppenomad/" >
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
 
-                <a class="flex hover:text-blue-500 transition-colors duration-200" href="mailto@todo" >
+                <a class="flex hover:text-blue-500 transition-colors duration-200"
+                    href="mailto@samthomas@arizona.edu" >
                     <i class="fa-regular fa-envelope"></i>
                 </a>
 

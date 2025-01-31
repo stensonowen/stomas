@@ -93,7 +93,9 @@ X. scroll progress table of contents
             <img class="w-1/5 float-left mr-4 mb-4 rounded-lg" src={bent} alt="a man crouches" />
             <h2> About Sam </h2>
             <p class="text-xl pb-1">
-                PhD student and Graduate TA at the University of Arizona. 
+                PhD student and Graduate TA at the
+                <a class="text-blue-700 hover:underline" href="https://philosophy.arizona.edu/person/samuel-thomas"
+                >University of Arizona</a>. 
                 </p> <p class="text-xl py-1">
                 Research interests include legal epistemology, linguistics, critical theory, and European history.
             </p>
