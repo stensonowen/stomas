@@ -117,7 +117,7 @@
             <Card
                 publisher="Cosmonaut Mag"
                 title="The Machiavellian State, Fascism, and the Tribune of the Proletariat"
-                link="example.com"
+                link="https://cosmonautmag.com/2022/04/the-machiavellian-state-fascism-and-the-tribune-of-the-proletariat/"
                 date="April 29, 2022"
                 text="How Machiavelli can help us understand the bourgeois nature of fascism, and how anti-fascism must empower the proletariat"
                 audio=true
@@ -138,7 +138,6 @@
             <h2> Courses </h2>
             <Card
                 title="The Boys: Nietzsche, Freud, Marx"
-                link="example.com"
                 date="Fall 2022"
                 text="Didn't these nerds all live in Austria at the same time? No I feel like Nietzsche was dead before Freud was old enough. I'm not going to look it up.
                 They discussed a parable of a traveler who was choking on his father's penis and had no choice but to bite it off. A spectre is blowing Europe's back out."

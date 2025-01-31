@@ -56,7 +56,7 @@
                 </a>
 
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="mailto@samthomas@arizona.edu" >
+                    href="mailto:samthomas@arizona.edu" >
                     <i class="fa-regular fa-envelope"></i>
                 </a>
 
