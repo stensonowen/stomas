@@ -1,7 +1,30 @@
 <script lang="ts">
     import logo from '../assets/sam1_.png'
     import '@fortawesome/fontawesome-free/css/all.min.css'
+
+    function darken() {
+        console.log('darken');
+        window.document.body.classList.add('dark-mode');
+    }
+    function lighten() {
+        console.log('lighten');
+        window.document.body.classList.remove('dark-mode');
+    }
 </script>
+
+<style>
+    :global(body) {
+        background-color: green;
+        transition: background-color 0.3s
+    }
+    :global(body.dark-mode) {
+        background-color: orange;
+    }
+    #lighten { color: black; }
+    #darken  { color: gray; }
+    :global(body.dark-mode) #lighten { color: gray; }
+    :global(body.dark-mode) #darken  { color: black; }
+</style>
 
 <div class="mt-14 lg:mt-24">
 
@@ -41,13 +64,15 @@
 
                 <!-- Light/Dark -->
                 <span class="pl-5">
-                    <a class="hover:text-blue-500 cursor-pointer transition-colors duration-200 " >
+                    <button onclick={lighten} id="lighten"
+                        class="hover:text-blue-500 cursor-pointer transition-colors duration-200 " >
                         <i class="fa-solid fa-sun"></i>
-                    </a>
+                    </button>
                     /
-                    <a class="hover:text-blue-500 cursor-pointer transition-colors duration-200" >
+                    <button onclick={darken} id="darken"
+                        class="hover:text-blue-500 cursor-pointer transition-colors duration-200" >
                         <i class="fa-solid fa-moon"></i>
-                    </a>
+                    </button>
                 </span>
             </div>
         </nav>
