@@ -1,5 +1,6 @@
 <script lang="ts">
     import logo from '../assets/sam1_.png'
+    import { base } from '$app/paths';
     import '@fortawesome/fontawesome-free/css/all.min.css'
 
     function darken() {
@@ -31,14 +32,14 @@
 
         <div class="flex items-center">
             <!-- Left -->
-            <a class="cursor-pointer">
-                <img class="h-10 object-cover" href="/" src={logo} alt="sam thomas headshot">
+            <a class="cursor-pointer" href={`${base}/`}>
+                <img class="h-10 object-cover" src={logo} alt="sam thomas headshot">
                 </a>
             </div>
 
             <!-- Middle -->
             <div class="items-center p-2">
-                <a class="text-gray-200 cursor-pointer text-2xl" href="/">
+                <a class="text-gray-200 cursor-pointer text-2xl" href={`$base}/`}>
                     Sam Thomas
                 </a>
             </div>
