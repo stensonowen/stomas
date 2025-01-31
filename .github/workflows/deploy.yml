@@ -37,9 +37,11 @@ jobs:
           npm run build
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          # this should match the `pages` option in your adapter-static options
+          # Use a unique name for preview artifacts
+          # name: ${{ github.event_name == 'pull_request' && 'preview-${{ github.event.pull_request.number }}' || 'production' }}
+          name: ${{ github.event_name == 'pull_request' && format('preview-{0}', github.event.pull_request.number) || 'production' }}
           path: 'build/'
 
   deploy_prod:
@@ -59,6 +61,8 @@ jobs:
       - name: Deploy to Prod
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: 'production'
 
   deploy_preview:
     if: github.event_name == 'pull_request'
