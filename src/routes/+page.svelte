@@ -44,14 +44,17 @@
         border-radius: 15px;
         overflow-y: hidden;
         background-color: lightgray;
-        padding: 2rem;
-        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
         scroll-margin-top: 5rem;
     }
     .section h2 {
         font-size: 2.25rem;
         font-weight: bold;
         margin-bottom: 1rem;
+    }
+    .section:target h2 {
+        text-decoration: underline;
     }
     .selected {
         font-weight: bold;
@@ -61,7 +64,7 @@
 
 <!--
 1. light/dark mode button
-2. scroll progress table of contents
+X. scroll progress table of contents
 3. fix links
 ?. github ci
 -->
@@ -89,7 +92,7 @@
         <div id="about" class="section">
             <img class="w-1/5 float-left mr-4 mb-4 rounded-lg" src={bent} alt="a man crouches" />
             <h2> About Sam </h2>
-            <p class="text-xl py-1">
+            <p class="text-xl pb-1">
                 PhD student and Graduate TA at the University of Arizona. 
                 </p> <p class="text-xl py-1">
                 Research interests include legal epistemology, linguistics, critical theory, and European history.
