@@ -4,6 +4,7 @@
     import bent from '../assets/bent2.png'
 </script>
 
+
 <style>
     .section {
         color: black;
@@ -22,6 +23,13 @@
 </style>
 
 
+<!--
+1. light/dark mode button
+2. scroll progress table of contents
+3. fix links
+?. github ci
+-->
+
 <Navbar />
 
 <div class="container mx-auto flex flex-col lg:flex-row">
@@ -33,8 +41,7 @@
             <li><a href="#about"        class="text-gray-500 hover:font-bold">About</a></li>
             <li><a href="#publications" class="text-gray-500 hover:font-bold">Publications</a></li>
             <li><a href="#courses"      class="text-gray-500 hover:font-bold">Courses</a></li>
-            <li><a href="#section4" class="text-gray-500 hover:font-bold">Papers</a></li>
-            <li><a href="#section5" class="text-gray-500 hover:font-bold">Links</a></li>
+            <li><a href="#links"        class="text-gray-500 hover:font-bold">Links</a></li>
         </ul>
     </div>
 
@@ -44,7 +51,7 @@
         <!-- ABOUT -->
         <div id="about" class="section">
             <img class="w-1/5 float-left mr-4 mb-4 rounded-lg" src={bent} alt="a man crouches" />
-            <h2> About Sam Thomas </h2>
+            <h2> About Sam </h2>
             <p class="text-xl py-1">
                 PhD student and Graduate TA at the University of Arizona. 
                 </p> <p class="text-xl py-1">
@@ -78,7 +85,7 @@
         <div id="courses" class="section">
             <h2> Courses </h2>
             <Card
-                title="Weirdo Triumvirate: Nietzsche, Freud, Marx"
+                title="The Boys: Nietzsche, Freud, Marx"
                 link="example.com"
                 date="Fall 2022"
                 text="Didn't these nerds all live in Austria at the same time? No I feel like Nietzsche was dead before Freud was old enough. I'm not going to look it up.
