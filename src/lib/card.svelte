@@ -4,13 +4,13 @@
 </script>
 
 <div class="container text-xl p-2 rounded-r-xl mb-5
-    bg-gray-100 dark:bg-black
+    bg-gray-100 dark:bg-gray-950
     ">
     <a class="text-3xl p-1" href={pr.link}>
         {#if pr.publisher}
-            <span class="text-gray-600 italic pr-2"> {pr.publisher}: </span>
+            <span class="text-gray-700 italic pr-2"> {pr.publisher}: </span>
         {/if}
-        <span class="text-gray-800"> {pr.title} </span>
+        <span class="text-gray-500"> {pr.title} </span>
     </a>
     <p class="pt-1">
         {#if pr.date}
