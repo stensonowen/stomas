@@ -60,6 +60,14 @@
     .selected {
         font-weight: bold;
     }
+
+    :global(body) {
+        background-color: #EEEEEE;
+        transition: background-color 0.3s
+    }
+    :global(body.dark) {
+        background-color: #242529;
+    }
 </style>
 
 
@@ -76,7 +84,7 @@ X. scroll progress table of contents
 
 
     <!-- Table of Contents -->
-    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 bg-white border rounded-xl border-gray-200 lg:fixed ">
+    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 bg-white dark:bg-gray-400 border rounded-xl border-gray-200 lg:fixed ">
         <h2 class="text-xl text-gray-700 font-bold mb-4">Contents</h2>
         <ul class="space-y-2 px-5">
             <li><a href="#about"        class="text-gray-500 hover:font-bold selected">About</a></li>

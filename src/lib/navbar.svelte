@@ -4,32 +4,25 @@
 
     function darken() {
         console.log('darken');
-        window.document.body.classList.add('dark-mode');
+        window.document.body.classList.add('dark');
     }
     function lighten() {
         console.log('lighten');
-        window.document.body.classList.remove('dark-mode');
+        window.document.body.classList.remove('dark');
     }
 </script>
 
 <style>
-    :global(body) {
-        background-color: green;
-        transition: background-color 0.3s
-    }
-    :global(body.dark-mode) {
-        background-color: orange;
-    }
-    #lighten { color: black; }
+    #lighten { color: gray; }
     #darken  { color: gray; }
-    :global(body.dark-mode) #lighten { color: gray; }
-    :global(body.dark-mode) #darken  { color: black; }
+    :global(body.dark) #lighten { color: gray; }
+    :global(body.dark) #darken  { color: gray; }
 </style>
 
 <div class="mt-14 lg:mt-24">
 
     <!-- Navbar -->
-    <nav class="flex justify-around py-4 bg-black/80 py-2 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10">
+    <nav class="flex justify-around py-4 bg-gray-700/80 dark:bg-gray-900/80 py-2 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10">
 
         <div class="flex items-center">
             <!-- Left -->
