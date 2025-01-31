@@ -83,4 +83,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # Use a unique path for preview deployments
-          artifact_name: ${{ needs.build_site.outputs.artifact_name }}
+          artifact_name: 'preview-${{ github.event.pull_request.number }}'
