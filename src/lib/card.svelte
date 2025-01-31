@@ -10,9 +10,9 @@
         {#if pr.publisher}
             <span class="text-gray-700 italic pr-2"> {pr.publisher}: </span>
         {/if}
-        <span class="text-gray-500"> {pr.title} </span>
+        <span class="text-gray-300"> {pr.title} </span>
     </a>
-    <p class="pt-1">
+    <p class="pt-1 text-gray-400">
         {#if pr.date}
             <span class="text-gray-500 pr-2"> {pr.date} </span>
         {/if}
@@ -26,6 +26,6 @@
             <i class="fa-brands fa-creative-commons"></i>
             <i class="fa-brands {pr.creativecommons}"></i>
         {/if}
-        <span class="pl-2"> {pr.text} </span>
+        <span class="pl-2 "> {pr.text} </span>
     </p>
 </div>
