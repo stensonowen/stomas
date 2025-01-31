@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: 'main'
+  pull_request:
+    branches: 'main'
 
 jobs:
   build_site:
@@ -10,12 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
-      # - name: Install pnpm
-      #   uses: pnpm/action-setup@v3
-      #   with:
-      #     version: 8
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -28,7 +24,8 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: |
+            ${{ github.event_name == 'pull_request' && '/preview-${{ github.event.pull_request.number }}' || '/${{ github.event.repository.name }}' }}
         run: |
           npm run build
 
@@ -38,7 +35,8 @@ jobs:
           # this should match the `pages` option in your adapter-static options
           path: 'build/'
 
-  deploy:
+  deploy_prod:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build_site
     runs-on: ubuntu-latest
 
@@ -51,6 +49,27 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy
+      - name: Deploy to Prod
         id: deployment
         uses: actions/deploy-pages@v4
+
+  deploy_preview:
+    if: github.event_name == 'pull_request'
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages-preview
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy Preview
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # Use a unique path for preview deployments
+          artifact_name: 'preview-${{ github.event.pull_request.number }}'
