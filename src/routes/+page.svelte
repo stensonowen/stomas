@@ -79,7 +79,7 @@
 
 
     <!-- Table of Contents -->
-    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 border rounded-xl border-gray-600 lg:fixed
+    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 my-5 border rounded-xl border-gray-600 lg:fixed
         bg-white dark:bg-gray-800
         text-gray-500 dark:text-gray-300
         ">
