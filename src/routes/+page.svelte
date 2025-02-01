@@ -148,6 +148,7 @@
         <div id="links" class="section">
             <h2> Links </h2>
             <p> Soundcloud link, or montage of those albums you listen to on Fridays. Maybe embed a youtube video of playing Darude - Sandstorm on the guitar </p>
+            <p> SFDkljsdlfj </p>
         </div>
     </div>
 
