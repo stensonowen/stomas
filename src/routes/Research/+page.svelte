@@ -1,8 +1,7 @@
 <script lang="ts">
     import Navbar from '$lib/navbar.svelte'
     import Card from '$lib/card.svelte'
-    import bent from '../assets/bent2.png'
-
+    
     let contentsElems = {};
 
     function initializeScrollObserver() {
