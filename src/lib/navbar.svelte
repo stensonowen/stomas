@@ -66,7 +66,7 @@
             <!-- Middle -->
             <div class="items-center p-2">
                 <a class="text-gray-200 cursor-pointer text-2xl" href={`${base}/`}>
-                    Sam Thomas
+                    Samuel J. Thomas
                 </a>
             </div>
 
@@ -76,7 +76,11 @@
                     href="mailto:samthomas@arizona.edu" aria-label="email link">
                     <i class="fa-regular fa-envelope"></i>
                 </a>
-
+            <div class="flex items-center space-x-5 text-gray-300 ">
+                <a class="flex hover:text-blue-500 transition-colors duration-200"
+                    href="https://philpeople.org/profiles/samuel-j-thomas" aria-label="PhilPeople"> PhilPeople
+                </a>
+                
                 <!-- Light/Dark -->
                 <span class="pl-5">
                     <button onclick={lighten} id="lighten" aria-label="light mode"
