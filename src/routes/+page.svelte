@@ -79,7 +79,7 @@
 
 
     <!-- Table of Contents -->
-    <div id="table-of-contentsElems" class="w-full lg:w-auto p-5 my-5 border rounded-xl border-gray-600 lg:fixed
+    <div id="table-of-contentsElems" class="w-full lg:w-auto p-2 my-5 border rounded-xl border-gray-600 lg:fixed
         bg-white dark:bg-gray-800
         text-gray-500 dark:text-gray-300
         ">
@@ -95,7 +95,7 @@
     </div>
 
     <!-- Content -->
-    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[15%]
+    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[20%]
         text-gray-600 dark:text-gray-300">
 
         <!-- ABOUT -->
