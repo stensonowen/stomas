@@ -95,7 +95,7 @@
     </div>
 
     <!-- Content -->
-    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[15%]
+    <div use:onLoad id="content-area" class="w-full lg:w-auto lg:ml-[20%]
         text-gray-600 dark:text-gray-300">
 
         <!-- ABOUT -->
