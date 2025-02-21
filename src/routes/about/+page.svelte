@@ -95,7 +95,6 @@
         text-gray-600 dark:text-gray-300">
         <!-- ABOUT -->
         <div id="about" class="section">
-            <img class="w-1/5 float-left mr-4 mb-4 rounded-lg" src={bent} alt="a man crouches" />
             <h2> About Sam </h2>
             <p class="text-xl pb-1 dark:text-gray-200">
                 PhD student and Graduate TA at the
@@ -108,7 +107,6 @@
                 </p> <p class="text-xl py-1">
             </p>
         </div>
-
     </div>
 </div>
 
