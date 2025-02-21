@@ -89,7 +89,7 @@
         <ul class="space-y-2 px-5">
             <li><a href="#about"        class="hover:font-bold selected">About</a></li>
             <li><a href="#publications" class="hover:font-bold">Publications</a></li>
-            <li><a href="#courses"      class="hover:font-bold">Courses</a></li>
+            <li><a href="#courses"      class="hover:font-bold">Courses (as Instructor of Record)</a></li>
             <li><a href="#links"        class="hover:font-bold">Links</a></li>
         </ul>
     </div>
@@ -135,7 +135,7 @@
 
         <!-- COURSES -->
         <div id="courses" class="section">
-            <h2> Courses </h2>
+            <h2> Courses (as Instructor of Record) </h2>
 <Card
                 title="PHIL265 - Twentieth Century Continental Philosophy"
                 date="Fall 2024"
