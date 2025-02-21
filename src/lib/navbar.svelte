@@ -73,21 +73,21 @@
             <!-- Right -->
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://samueljthomasphilosophy.github.io/samueljthomas/about.html" aria-label="PhilPeople"> about
+                    href="https://samueljthomasphilosophy.github.io/samueljthomas/about.html"> about
                 </a>
 
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://samueljthomasphilosophy.github.io/samueljthomas/Research.html" aria-label="PhilPeople"> research
+                    href="https://samueljthomasphilosophy.github.io/samueljthomas/Research.html"> research
                 </a>
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://samueljthomasphilosophy.github.io/samueljthomas/Research.html" aria-label="PhilPeople"> teaching
+                    href="https://samueljthomasphilosophy.github.io/samueljthomas/teaching.html"> teaching
                 </a>
 
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://philpeople.org/profiles/samuel-j-thomas" aria-label="PhilPeople"> PhilPeople
+                    href="https://philpeople.org/profiles/samuel-j-thomas"> PhilPeople
                 </a>
             
             <div class="flex items-center space-x-5 text-gray-300 ">
