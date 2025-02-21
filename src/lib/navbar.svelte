@@ -72,16 +72,6 @@
 
             <!-- Right -->
             <div class="flex items-center space-x-5 text-gray-300 ">
-                <a class="flex cursor-pointer hover:text-blue-500 transition-colors duration-200"
-                    href="https://bsky.app/profile/wokesteppenomad.bsky.social" aria-label="bluesky">
-                    <i class="fa-brands fa-bluesky"></i>
-                </a>
-
-                <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://x.com/wokesteppenomad/" aria-label="twitter">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
                     href="mailto:samthomas@arizona.edu" aria-label="email link">
                     <i class="fa-regular fa-envelope"></i>
