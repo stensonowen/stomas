@@ -84,12 +84,16 @@
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
                     href="https://samueljthomasphilosophy.github.io/samueljthomas/teaching.html"> teaching
                 </a>
+            <div class="flex items-center space-x-5 text-gray-300 ">
+                <a class="flex hover:text-blue-500 transition-colors duration-200"
+                    href="https://samueljthomasphilosophy.github.io/samueljthomas/ctwg.html"> ctwg
+                </a>
 
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
                     href="https://philpeople.org/profiles/samuel-j-thomas"> PhilPeople
                 </a>
-            
+
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
                     href="mailto:samthomas@arizona.edu" aria-label="email link">
