@@ -119,7 +119,7 @@
                 title="On the Falsity of Prevailing Ideas: The Concept of Ideology in Early Critical Theory"
                 link="https://ctwgwebsite.github.io/projects/1_project/"
                 date="Fall 2024"
-                text="<P italic>Margin Notes</P> is the journal of the Critical Theory Working Group, of which I am a member. For more information, please see the CTWG tab."
+                text="<i>Margin Notes</i> is the journal of the Critical Theory Working Group, of which I am a member. For more information, please see the CTWG tab."
                 pdf="https://ctwgwebsite.github.io/assets/pdf/journal/Margin_notes_1_final_full.pdf"
                 creativecommons="fa-creative-commons-by"
             />
