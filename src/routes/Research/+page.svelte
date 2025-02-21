@@ -129,5 +129,6 @@
                 creativecommons="fa-creative-commons-by"
             />
         </div>
+    </div>
 </div>
 
