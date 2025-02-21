@@ -95,8 +95,9 @@
         text-gray-600 dark:text-gray-300">
         <!-- ABOUT -->
         <div id="about" class="section">
-            <h2> About Sam </h2>
+            <h2> About Me </h2>
             <p class="text-xl pb-1 dark:text-gray-200">
+                I go by Sam around friends and Mr. Thomas around state apparatchiks, authority figures, and the like.
                 PhD student and Graduate TA at the
                 <a class="text-blue-700 hover:underline" href="https://philosophy.arizona.edu/person/samuel-thomas"
                 >University of Arizona</a>. 
