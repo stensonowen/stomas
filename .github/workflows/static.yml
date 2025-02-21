@@ -1,0 +1,86 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: 'main'
+  pull_request:
+    branches: 'main'
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Set BASE_PATH dynamically
+        id: set_base_path
+        run: |
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "BASE_PATH=/preview-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+          else
+            echo "BASE_PATH=/${{ github.event.repository.name }}" >> $GITHUB_ENV
+          fi
+
+      - name: build
+        run: |
+          env
+          npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Use a unique name for preview artifacts
+          # name: ${{ github.event_name == 'pull_request' && 'preview-${{ github.event.pull_request.number }}' || 'production' }}
+          name: ${{ github.event_name == 'pull_request' && format('preview-{0}', github.event.pull_request.number) || 'production' }}
+          path: 'build/'
+
+  deploy_prod:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to Prod
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: 'production'
+
+  deploy_preview:
+    if: github.event_name == 'pull_request'
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages-preview
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy Preview
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # Use a unique path for preview deployments
+          artifact_name: 'preview-${{ github.event.pull_request.number }}'
