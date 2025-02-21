@@ -1,7 +1,6 @@
 <script lang="ts">
     import Navbar from '$lib/navbar.svelte'
     import Card from '$lib/card.svelte'
-    import rizzmaster from '../assets/rizzmaster.jpg'
     
     let contentsElems = {};
 
@@ -96,7 +95,6 @@
         text-gray-600 dark:text-gray-300">
         <!-- ABOUT -->
         <div id="about" class="section">
-            <img class="w-1/5 float-left mr-4 mb-4 rounded-lg" src={rizzmaster} alt="a man vibes" />
             <h2> About Me </h2>
             <p class="text-xl pb-1 dark:text-gray-200">
                 I go by Sam around friends and Mr. Thomas around state apparatchiks, authority figures, and the like.
