@@ -97,12 +97,12 @@
         <div id="ctwg" class="section">
             <h2> The Critical Theory Working Group </h2>
             <p class="text-xl pb-1 dark:text-gray-200">
-            In addition to my academic commitments, I am a member of the editorial board of the Critical Theory Working Group (CTWG). The CTWG is a collective of researchers decicated to providing resources & open reading groups for collective study of early Critical Theory. We also have recently published a journal titled
+                In addition to my academic commitments, I am a member of the editorial board of the Critical Theory Working Group (CTWG). The CTWG is a collective of researchers decicated to providing resources & open reading groups for collective study of early Critical Theory. We also have recently published a journal titled
                 </p> <p class="text-xl py-1">
-                <a class="text-italic-700 hover:underline" href="https://ctwgwebsite.github.io/projects/1_project/"
+                <a class="text-italic hover:underline" href="https://ctwgwebsite.github.io/projects/1_project/"
                 >Margin Notes</a>. 
                 </p> <p class="text-xl py-1">
-            For more information, please visit the CTWG
+                For more information, please visit the CTWG
                 </p> <p class="text-xl py-1">
                 <a class="text-blue-700 hover:underline" href="https://ctwgwebsite.github.io"
                 >website</a>. 
