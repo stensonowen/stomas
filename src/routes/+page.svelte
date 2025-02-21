@@ -136,6 +136,21 @@
         <!-- COURSES -->
         <div id="courses" class="section">
             <h2> Courses </h2>
+<Card
+                title="PHIL265 - Twentieth Century Continental Philosophy"
+                date="Fall 2024"
+                text="The twentieth century saw massive changes in sociopolitical organization, technology, and social mores. In this course, students will examine with different philosophical perspectives on these shifts, and engage with topics such as the relationship between the State and civil society, the limits of the law in constraining the State, the way that new technological developments shape our relation to the world, and how we should act in a world that had lost faith in God."
+            /> 
+<Card
+                title="PHIL323 - Environmental Ethics"
+                date="Summer 2024"
+                text="We will investigate and seriously consider how and why we should live as morally responsible members of an ecological community. Students will explore philosophical responses to questions such as: What makes something natural? What value is there to non-human entities? What obligations do we have to each other regarding the environment? Students will investigate social scientific responses to questions such as: How should wilderness be preserved? How should we respond to climate change? How should water resources be allocated? Students will build connections between and reconcile philosophical and social scientific approaches to issues of environmental concern."
+            /> 
+<Card
+                title="PHIL263 - From Hegel to Nietzsche: 19th Century Philosophy"
+                date="Spring 2024, Spring 2025"
+                text="Survey of influential 19th century philosophers, including Hegel, Marx, J. S. Mill, Kierkegaard, and Nietzsche. Their views on the individual and society, and human nature."
+            />
             <Card
                 title="PHIL246 - Existentialism and Phenomenology"
                 date="Summer 2023"
