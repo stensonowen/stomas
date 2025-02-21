@@ -112,7 +112,8 @@
         <!-- PUBLIC PUBLICATIONS -->
         <div id="publications_public" class="section">
             <h2> Public Philosophy </h2>
-            Work of mine which is published outside the ivory tower.
+            Works of mine which lie outside the ivory tower.
+
             <Card
                 publisher="Margin Notes"
                 title="On the Falsity of Prevailing Ideas: The Concept of Ideology in Early Critical Theory"
