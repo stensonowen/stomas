@@ -80,6 +80,10 @@
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
                     href="https://samueljthomasphilosophy.github.io/samueljthomas/Research.html" aria-label="PhilPeople"> research
                 </a>
+            <div class="flex items-center space-x-5 text-gray-300 ">
+                <a class="flex hover:text-blue-500 transition-colors duration-200"
+                    href="https://samueljthomasphilosophy.github.io/samueljthomas/Research.html" aria-label="PhilPeople"> teaching
+                </a>
 
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
