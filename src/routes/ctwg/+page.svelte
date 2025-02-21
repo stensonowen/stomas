@@ -101,7 +101,7 @@
                 
                 We also have recently published a journal titled <i>Margin Notes.</i> 
 
-                For more information, please visit the CTWG
+                For more information, please visit the CTWG 
                 </p> <p class="text-xl py-1">
                 <a class="text-blue-700 hover:underline" href="https://ctwgwebsite.github.io"
                 >website</a>. 
