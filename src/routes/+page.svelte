@@ -137,10 +137,9 @@
         <div id="courses" class="section">
             <h2> Courses </h2>
             <Card
-                title="The Boys: Nietzsche, Freud, Marx"
-                date="Fall 2022"
-                text="Didn't these nerds all live in Austria at the same time? No I feel like Nietzsche was dead before Freud was old enough. I'm not going to look it up.
-                They discussed a parable of a traveler who was choking on his father's penis and had no choice but to bite it off. A spectre is blowing Europe's back out."
+                title="PHIL246 - Existentialism and Phenomenology"
+                date="Summer 2023"
+                text="Suppose it was entirely up to you to decide what is right or wrong, what is valuable and what is not. Suppose it was \"entirely\" up to you in the sense that there were no other standards or guidelines to tell you how to go about making these decisions. That would be a huge and perhaps scary task. Is it even possible to make decisions in a world where there are no objective norms and values to fall back on? A group of philosophers, the existentialists, thought that our actual task in this world is not so different. On their account, at least when it comes to what is most valuable and the fundamental norms of one's own life, it is entirely up to each one of us to make that decision for ourselves. This course is an introduction to various theories and expressions of 19th- and 20th-century existentialism and its phenomenological method. We will read authors such as Kierkegaard, Nietzsche, Husserl, Sartre, Camus, de Beauvoir, and Fanon. We will also analyze some existentialist literature."
             />
         </div>
 
