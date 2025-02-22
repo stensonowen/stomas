@@ -107,6 +107,7 @@
                 <a class="text-blue-700 hover:underline" href="https://ctwgwebsite.github.io"
                 >Critical Theory Working Group</a>. 
                 </p> <p class="text-xl py-1">
+                My present research interests revolve around applied political philosophy. Specifically, I am interested in what we should do to prevent or reverse democratic backsliding, what ethical limits there are on economic sanctions, and which types of political compromises are unjust.
             </p>
         </div>
     </div>
