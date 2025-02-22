@@ -103,7 +103,7 @@
                 <a class="text-blue-700 hover:underline" href="https://philosophy.arizona.edu/person/samuel-thomas"
                 >University of Arizona</a>. 
                 </p> <p class="text-xl py-1">
-                My present research interests revolve around applied political philosophy. Specifically, I am interested in what we should do to prevent or reverse democratic backsliding, what ethical limits there are on economic sanctions, and which types of political compromises are unjust.
+                My present research interests revolve around applied political philosophy. Specifically, I am interested in what we should do to prevent or reverse democratic backsliding, what ethical limits there are on economic sanctions, and which types of political compromises are unjust. I have also written on the concept of ideology.
                 
                 Before coming to the University of Arizona, I graduated from Arizona State University with a B.A. in Philosophy and Italian in 2019 and an M.A. in Philosophy in 2021. My M.A. thesis dealt with legal epistemology, specifically how judges and juries should evaluate different types of evidence. However, my interests have shifted a fair bit over the last couple years. Aside from my academic commitments, I am part of the Editorial Board for the 
                 <a class="text-blue-700 hover:underline" href="https://ctwgwebsite.github.io"
