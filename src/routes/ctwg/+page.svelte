@@ -106,6 +106,13 @@
                 <a class="text-blue-700 hover:underline" href="https://ctwgwebsite.github.io"
                 >website</a>. 
                 </p> <p class="text-xl py-1">
+
+                We are a volunteer-run organization, and hence all our work is done <i>pro bono</i>. If you are interested in supporting our work, consider donating to the CTWG
+                </p> <p class="text-xl py-1">
+                <a class="text-blue-700 hover:underline" href="https://www.patreon.com/crittheoryworkgroup"
+                >Patreon</a>. 
+                </p> <p class="text-xl py-1">
+
             </p>
         </div>
     </div>
