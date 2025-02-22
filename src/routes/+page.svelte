@@ -90,7 +90,6 @@
             <li><a href="#about"        class="hover:font-bold selected">About</a></li>
             <li><a href="#publications" class="hover:font-bold">Publications</a></li>
             <li><a href="#courses"      class="hover:font-bold">Courses (as Instructor of Record)</a></li>
-            <li><a href="#links"        class="hover:font-bold">Links</a></li>
         </ul>
     </div>
 
