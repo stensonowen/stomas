@@ -99,7 +99,7 @@
             <p class="text-xl pb-1 dark:text-gray-200">
                 I go by Sam around friends and Mr. Thomas around state apparatchiks, authority figures, and the like.
             
-                PhD student and Graduate TA at the
+                I am a PhD student and Graduate TA at the
                 <a class="text-blue-700 hover:underline" href="https://philosophy.arizona.edu/person/samuel-thomas"
                 >University of Arizona</a>. 
                 </p> <p class="text-xl py-1">
