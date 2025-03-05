@@ -1,6 +1,7 @@
 <script lang="ts">
     import Navbar from '$lib/navbar.svelte'
     import Card from '$lib/card.svelte'
+    import bubbles from '../../assets/bubbles.jpeg'
     
     let contentsElems = {};
 
@@ -96,6 +97,7 @@
         <!-- ABOUT -->
         <div id="about" class="section">
             <h2> About Me </h2>
+            <img src={bubbles} alt="gettin lit off de bubbles" />
             <p class="text-xl pb-1 dark:text-gray-200">
                 I go by Sam around friends and Mr. Thomas around state apparatchiks, authority figures, and the like.
             
@@ -113,4 +115,3 @@
         </div>
     </div>
 </div>
-
