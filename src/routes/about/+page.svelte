@@ -1,7 +1,8 @@
 <script lang="ts">
     import Navbar from '$lib/navbar.svelte'
     import Card from '$lib/card.svelte'
-    import bubbles from '../../assets/bubbles.jpeg'
+    // import bubbles from '../../assets/bubbles.jpeg'
+    import bubbles from '$lib/../assets/bubbles.jpeg'
     
     let contentsElems = {};
 
