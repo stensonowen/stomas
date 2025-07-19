@@ -78,7 +78,7 @@
 
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
-                    href="https://samueljthomasphilosophy.github.io/samueljthomas/Research.html"> research
+                    href="https://samueljthomasphilosophy.github.io/samueljthomas/research.html"> research
                 </a>
             <div class="flex items-center space-x-5 text-gray-300 ">
                 <a class="flex hover:text-blue-500 transition-colors duration-200"
